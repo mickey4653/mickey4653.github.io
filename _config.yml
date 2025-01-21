@@ -1,0 +1,57 @@
+# Site settings
+title: Github Portfolio
+description: > # this means to ignore newlines until "baseurl:"
+  A Github Portfolio showcasing my skills and porject i've worked on.
+baseurl: "" # Base URL for the project (e.g., /repo-name)
+url: "https://mickey4653.github.io" # Your site's URL
+
+# Author information
+author:
+  name: Michael Ilerioluwa Adeniyi
+  email: adeniyimichaelid@gmail.com
+  linkedin_username: https://www.linkedin.com/in/michaeliadeniyi
+  github_username: mickey4653
+
+# Appearance
+theme: jekyll-theme-architect # You can replace this with your preferred theme
+markdown: kramdown # Specify the Markdown processor
+
+# Customization
+permalink: pretty # URL structure for posts (e.g., /:categories/:title)
+paginate: 5 # Number of posts per page in pagination
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+
+# Defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Michael Ilerioluwa Adeniyi"
+
+# Social links (optional)
+social_links:
+  linkedin: "https://www.linkedin.com/in/michaeliadeniyi"
+  github: "https://github.com/mickey4653"
+  Instagram: "https://www.instagram.com/mikkybass/"
+
+# Build settings
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed # or expanded
+
+# Optional settings for future-proofing
+future: true # Include posts dated in the future
